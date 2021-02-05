@@ -138,13 +138,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             String response;
 
             try {
-                String url2 = String.format("https://api.darksky.net/forecast/c3b0b883b5b88cd92595e20d0515562e/%s,%s\n", "30.257153", "-97.7430608");
+                String url2 = String.format("https://api.darksky.net/forecast/key/%s,%s\n", "30.257153", "-97.7430608");
 
 
                 String str = strings[0];
                 String[] strArry = str.split(" / ");
                 HttpDataHandler http = new HttpDataHandler();
-                //String url = String.format("https://api.darksky.net/forecast/c3b0b883b5b88cd92595e20d0515562e/%s,%s\n", strArry[0], strArry[1]);
+                //String url = String.format("https://api.darksky.net/forecast/key/%s,%s\n", strArry[0], strArry[1]);
 
                 response = http.getHTTPData(url2);
 
@@ -187,7 +187,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
             try{
                 String address = strings[0];
                 HttpDataHandler http = new HttpDataHandler();
-                String url = String.format("https://maps.googleapis.com/maps/api/geocode/json?address=%s&key=AIzaSyBN21SuE0mMAVrbSLU2ctbIwKE49GR83EY\n",address);
+                String url = String.format("https://maps.googleapis.com/maps/api/geocode/json?address=%s&\n",address);
                 response = http.getHTTPData(url);
 
 
