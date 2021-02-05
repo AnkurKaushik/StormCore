@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">StormCore</string>
+    <string name="enter_your_address">Enter your address</string>
+    <string name="find_coordinates">Find Coordinates</string>
+    <string name="enter_coordinates_here">enter coordinates here</string>
+    <string name="words">words</string>
+    <string name="bbbbbb">bbbbbb</string>
+    <string name="name">Name</string>
+    <string name="location">location</string>
+    <string name="weather_info">Weather_Info</string>
+    <string name="wI">Weather Info</string>
+    <string name="changeview">ChangeView</string>
+</resources>

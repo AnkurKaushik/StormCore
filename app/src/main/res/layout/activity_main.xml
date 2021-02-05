@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.stormcore.MainActivity">
+
+
+    <EditText
+    android:id="@+id/edtAddress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/btnShowCoordinates"
+    android:layout_marginBottom="20dp"
+    android:autofillHints=""
+    android:hint="@string/enter_your_address"
+    android:inputType="text"
+    tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/edtAddress"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:hint="@+string/coordinate"
+        android:visibility="visible"
+        android:inputType="none"
+        tools:targetApi="o" />
+
+
+    <Button
+        android:id="@+id/btnShowCoordinates"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/find_coordinates" />
+
+</RelativeLayout>
